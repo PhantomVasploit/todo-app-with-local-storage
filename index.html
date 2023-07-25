@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Phantom'sTaskManager</title>
+</head>
+
+<body>
+    <main>
+        <section class="sidebar">
+            <div class="top">
+                <div class="theme">
+                    <img height="20px" width="20px" src="./assets/sleep-mode.png" alt="dark-mode">
+                </div>
+                <div class="option-icon">
+                    <img height="20px" width="20px" src="./assets/options.png" alt="option-icon">
+                </div>
+            </div>
+            <div class="middle">
+                <div class="links">
+                    <div class="image">
+                        <img height="30px" width="30px" src="./assets/to-do-list.png" alt="smile-icon">
+                    </div>
+                    <a href="#" class="allTasksLink">All tasks</a>
+                </div>
+                <div class="links">
+                    <div class="image">
+                        <img height="30px" width="30px" src="./assets/smile.png" alt="smile-icon">
+                    </div>
+                    <a href="#" class="completedLink">Completed tasks</a>
+                </div>
+                <div class="links">
+                    <div class="image">
+                        <img height="30px" width="30px" src="./assets/sad.png" alt="smile-icon">
+                    </div>
+                    <a href="#" class="uncompletedLink">Uncompleted tasks</a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="image">
+                    <img width="20px" height="20px" src="./assets/frame.png" alt="">
+                </div>
+            </div>
+
+        </section>
+        <section class="todos">
+
+            <div class="user-info">
+
+                <div class="icons">
+                    <div class="search-icon">
+                        <img width="30px" height="30px" src="./assets/search-interface-symbol.png" alt="search-icon">
+                    </div>
+                    <div class="notification-icon">
+                        <img width="30px" height="30px" src="./assets/notification.png" alt="notification-icon">
+                    </div>
+                </div>
+
+                <div class="profile-image">
+                    <img width="20px" height="20px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIwFJ1OfZ_vk1jxifvWcQ1TC5uxWac7oDxQQ&usqp=CAU"
+                        alt="">
+                </div>
+            </div>
+
+            <div class="tasks-header">
+
+                <div class="task">
+                    <h2>Tasks</h2>
+                    <div class="icons">
+                        <div class="option-icon">
+                            <img width="20px" height="20px" src="./assets/icons8-menu-64.png" alt="">
+                        </div>
+                        <div class="circle-menu-icon">
+                            <img width="20px" height="20px" src="./assets/icons8-circled-menu-50.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter">
+                    <h3>Filters</h3>
+                    <div class="option-icon">
+                        <img width="20px" height="20px" src="./assets/icons8-options-50.png" alt="">
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <a href="./taskForm.html">
+                        <button>
+                            <h4>Create</h4>
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="task-contanier">
+                    <div class="title">
+                        <h4>Today</h4>
+                        <small class="date-today"></small>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="task-item">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="./app.js" defer></script>
+</body>
+
+</html>

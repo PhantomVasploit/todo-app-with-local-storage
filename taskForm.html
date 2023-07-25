@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="taskForm.css">
+    <title>Phantom'sTaskManager</title>
+</head>
+<body>
+    <main>
+       <div class="card">
+           <div class="todo-form">
+
+            <div class="title">
+                <h2>Create New Task</h2>
+                <small>Please enter details to save a new todo</small>
+            </div>
+            <form action="" class="task-form">
+                <fieldset>
+                    <legend>Task details</legend>
+                    <div class="task-info">
+                        
+                        <div class="task-title">
+                            <label for="todo-title">Title</label>
+                            <input required placeholder="Title" type="text" name="todo-title" id="todo-title">
+                        </div>
+                        <div class="task-description">
+                            <label for="todo-description">Description</label>
+                            <input required placeholder="Description" type="text" name="todo-description" id="todo-description">
+                        </div>
+                        
+                    </div>
+                    <div class="task-date-time">
+                        <div class="task-creation-date">
+                            <label for="todo-creation-date">Creation Date</label>
+                            <input type="datetime-local" name="todo-creation-date" id="todo-creation-date" required>
+                        </div>
+                        <div class="task-completion-date">
+                            <label for="todo-completion-date">Completion Date</label>
+                            <input type="datetime-local" name="todo-completion-date" id="todo-completion-date" required>
+                        </div>
+                    </div>
+
+                    <div class="completion-status">
+                        <input type="checkbox" name="completion" id="completion">
+                        <label for="completion">Completion Status</label>
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit" value="Add new task">
+                    </div>
+                </fieldset>
+                
+            </form>
+            </div>
+            <!-- <div class="side-image">
+                <img src="https://media.istockphoto.com/id/1339879736/photo/hand-of-a-woman-writing-appointments-in-a-diary-organizer-or-schedule-calendar-with-a-lot-of.webp?b=1&s=170667a&w=0&k=20&c=tfipUUGWN3uWaBBVlfLvJ5Wm3W-j3XrrgwHsg7Vnx7o=" alt="todo-wallpaper">
+            </div>  -->
+       </div>
+    </main>
+    <script src="./taskForm.js" defer></script>
+</body>
+</html>

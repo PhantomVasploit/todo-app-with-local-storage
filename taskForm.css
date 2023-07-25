@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+main .card{
+    gap: 40px;
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+
+.card .todo-form{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* .card .side-image{
+    width: 50%;
+    height: 100%;
+} */
+
+/* .card .side-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+} */
+
+.todo-form .title{
+    padding: 20px;
+}
+
+.task-info{
+    width: 100%;
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.task-date-time{
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.task-date-time .task-creation-date,.task-completion-date{
+    gap: 15px;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.task-info .task-title, .task-description{
+    gap: 15px;
+    display: flex;
+    padding: 20px;
+    text-align: start;
+    flex-direction: column;
+}
+
+input[type="text"]{
+    border: none;
+    padding: 10px 20px;
+}
+
+input[type="datetime-local"]{
+    border: none;
+    padding: 10px 10px;
+}
+
+.completion-status{
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit{
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit input[type="submit"]{
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    background-color: lime;
+}
+
+fieldset{
+    border: none;
+    border-top: 1px solid black;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+    }
+    main .card{
+        width: 40rem;
+        height: 30rem;
+    }
+    .card .task-form{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* body{
+        height: 100rem;
+        width: 100rem;
+    } */
+}
